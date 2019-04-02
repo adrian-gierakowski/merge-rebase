@@ -12,7 +12,17 @@ test_file () {
   else
     echo "PASSED!"
   fi
+}
 
+test_file_any_content () {
+  local content=$(<$1)
+  printf "test for $1 with content: ${2}: "
+  if [[ "$content" != "$2" ]]; then
+    echo "FAILED! ${content} is not equal ${2}"
+    exit 1
+  else
+    echo "PASSED!"
+  fi
 }
 
 test_copy () {
@@ -29,6 +39,7 @@ test_copy () {
 
 test_file file1
 test_file file3
-test_file file4
+
+test_file_any_content file4 whatever
 
 test_copy file1 file1_copy
