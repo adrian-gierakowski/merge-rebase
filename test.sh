@@ -29,7 +29,7 @@ test_copy () {
 test_file file1
 test_file file2
 test_file file3
-test_file file4
+
 test_file file5
 
 test_copy file1 file1_copy
