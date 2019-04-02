@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Set the unofficial bash strict mode
+# http://redsymbol.net/articles/unofficial-bash-strict-mode/
 set -euo pipefail
 IFS=$'\n\t'
 
@@ -12,7 +14,6 @@ test_file () {
   else
     echo "PASSED!"
   fi
-
 }
 
 test_copy () {
