@@ -12,7 +12,6 @@ test_file () {
   else
     echo "PASSED!"
   fi
-
 }
 
 test_copy () {
