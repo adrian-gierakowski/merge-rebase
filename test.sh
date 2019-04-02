@@ -34,3 +34,4 @@ test_file file4
 test_file file5
 
 test_copy file1 file1_copy
+test_copy file2 file2_copy
